@@ -1,0 +1,104 @@
+/* Main Page Styles Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */ 
+:root {
+    --primary-color: #efb7ca;
+    --secondary-color: #8e1f1f;
+    --tertiary-color: #f3d25c;
+    --fourth-color: #e87c5a;
+    --fifth-color: #fffef3;
+}
+
+/* Color Classes */ 
+.primary-color {
+    color: var(--primary-color)
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.tertiary-color {
+    color: var(--tertiary-color);
+}
+
+.fourth-color {
+    color: var(--fourth-color);
+}
+
+.fifth-color {
+    color: var(--fifth-color);
+}
+
+body {
+    background-color: var(--fifth-color);
+    font-family: "Courier New", Courier, monospace;
+}
+/* Main Page Styles End */
+
+/* Header Styles Start */
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 a {
+    font-weight: normal;
+}
+
+header a:hover {
+    font-weight: bolder;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    padding: 0 5px 0 5px;
+    border-bottom: solid 1px var(--primary-color);
+}
+
+header nav ul li .tertiary-color, header nav ul li .fourth-color {
+    padding-left: 30px;
+}
+
+/* Header Styles End */
+
+/* About Me Styles */
+
+/* Work Styles */
+
+/* Contact Styles */
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    font-weight: bolder;
+}
