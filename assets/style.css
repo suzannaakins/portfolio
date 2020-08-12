@@ -74,11 +74,11 @@ header nav ul {
     align-items: center;
     list-style: none;
     text-align: center;
-    padding: 10px 0;
+    padding: 9px 0;
 }
 
 header nav ul li {
-    padding: 0 5px 0 5px;
+    padding: 0 5px 9px 5px;
     border-bottom: solid 1px var(--primary-color);
 }
 
@@ -89,6 +89,15 @@ header nav ul li .tertiary-color, header nav ul li .fourth-color {
 /* Header Styles End */
 
 /* About Me Styles */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 30px;
+}
 
 /* Work Styles */
 
