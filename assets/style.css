@@ -1,4 +1,4 @@
-/* Main Page Styles Start */
+/* PORTFOLIO Main Page Styles Start */
 
 * {
     margin: 0;
@@ -53,6 +53,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    background-color: var(--fifth-color);
 }
 
 header a {
@@ -88,15 +89,35 @@ header nav ul li .tertiary-color, header nav ul li .fourth-color {
 
 /* Header Styles End */
 
-/* About Me Styles */
+/* All Section Styles Start */
 
-.about {
+.about, .work, .contact {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 1;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 30px;
+}
+
+h2 {
+    padding: 5px 30px;
+}
+
+/* All Section Styles End */
+
+/* About Me Styles */
+
+.about {
+    flex: 1 1 100%;
+}
+
+div.text {
+    padding: 5px 30px;
+    border-left: solid 1px var(--primary-color);
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Work Styles */
@@ -111,3 +132,5 @@ header nav ul li .tertiary-color, header nav ul li .fourth-color {
 .contact a:hover {
     font-weight: bolder;
 }
+
+/* Media Queries Start */
