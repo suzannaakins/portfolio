@@ -58,10 +58,9 @@ header {
 
 header a {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
-header h1 {
+header h1 a {
     margin: 0;
     font-weight: normal;
     color: var(--primary-color);
@@ -120,7 +119,7 @@ h2 {
 }
 
 div.text {
-    padding: 5px 30px 10px 30px;
+    padding: 5px 100px 10px 100px;
     border-left: solid 1px var(--primary-color);
 }
 
