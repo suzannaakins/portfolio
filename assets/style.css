@@ -94,20 +94,20 @@ header nav ul li .tertiary-color, header nav ul li .fourth-color {
 .about, .work, .contact {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px 30px;
 }
 
 h2 {
     padding: 5px 30px;
+    white-space: nowrap;
 }
 
 /* All Section Styles End */
 
 /* About Me Styles */
 
-.about {
-    flex: 1 1 100%;
+.about {    
 }
 
 div.text {
@@ -118,6 +118,7 @@ div.text {
 .about img {
     max-width: 100%;
     height: auto;
+    padding: 5px 15px;
 }
 
 /* Work Styles */
