@@ -191,6 +191,7 @@ h2 {
 
 div.text {
     border: none;
+    padding: 0;
 }
 
 .about .text, .contact .text {
