@@ -62,15 +62,12 @@ header a {
 
 header h1 a {
     font-weight: normal;
+    font-size: 40px;
     color: var(--primary-color);
 }
 
 header a:hover {
     font-weight: bolder;
-}
-
-header nav {
-    
 }
 
 header nav ul {
@@ -80,7 +77,7 @@ header nav ul {
     align-items: center;
     list-style: none;
     text-align: right;
-    padding: 9px 0;
+    padding: 15px 0;
     margin: 0 auto;
 }
 
@@ -96,9 +93,9 @@ header nav ul li .tertiary-color, header nav ul li .fourth-color {
 
 /* Header Styles End */
 
-/* All Section Styles Start */
+/* General Section Styles Start */
 
-.about, .work, .contact {
+.about, .work {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +107,7 @@ h2 {
     white-space: nowrap;
 }
 
-/* All Section Styles End */
+/* General Section Styles End */
 
 /* About Me Styles */
 
@@ -128,7 +125,9 @@ div.text {
     padding: 5px 15px;
 }
 
-/* Work Styles */
+/* Work Styles Start */
+
+/* Work Styles End */
 
 /* Contact Styles */
 
@@ -139,6 +138,11 @@ div.text {
 
 .contact a:hover {
     font-weight: bolder;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Media Queries Start */
@@ -164,6 +168,10 @@ header nav ul {
     justify-content: center;
 }
 
+header nav ul li {
+    padding-bottom: 25px;
+}
+
 header nav ul li a {
     font-size: 15px;
 }
@@ -174,4 +182,23 @@ h2 {
 
 .about {
     flex-wrap: wrap;
+}
+
+.about, .contact {
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.text {
+    border: none;
+}
+
+.about .text, .contact .text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact {
+    flex-wrap: wrap;
+    align-items: center;
 }
