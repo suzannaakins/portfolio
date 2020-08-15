@@ -13,8 +13,8 @@ body {
 
 /* Color Palette */ 
 :root {
-    --primary-color: lightblue;
-    --secondary-color: darkblue;
+    --primary-color: #8ac3ca;
+    --secondary-color: #1b1f2ded;
 }
 
 /* General Page Styles End */
@@ -75,9 +75,10 @@ header nav ul li a {
 /* Subtitle Styles Start */
 
 .subtitle {
-    background-image: url("./images/woodwall.jpg");
+    background-image: url("./images/woodwall.jpeg");
     background-size: cover;
-    height: 300px;
+    background-position: center;
+    height: 400px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -97,19 +98,20 @@ header nav ul li a {
 /* Subtitle Styles End */
 
 
-/* About Me Styles Start */
+/* MAIN PAGE Styles Start */
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     width: 100%;
     grid-auto-rows: minmax(150px, 1fr);
-    padding-left: 150px
+    padding-top: 50px;
 }
 
 .item-1, .item-4, .item-6 {
     grid-column: 1 / 2;
+    padding-left: 150px;
 }
 
 .item-2 {
@@ -118,6 +120,12 @@ header nav ul li a {
 
 .item-3 {
     grid-column: 4 / 5;
+    display: flex;
+    justify-content: center;
+}
+
+.item-3 img {
+    width: 50%;
 }
 
 .item-5 {
@@ -140,5 +148,12 @@ header nav ul li a {
 }
 
 .item-7 ul li {
-    
+    color: var(--secondary-color);
+    border-bottom: solid 2px var(--secondary-color);
 }
+
+.item-7 ul li a {
+    text-decoration: none;
+}
+
+/* MAIN PAGE Styles End */
