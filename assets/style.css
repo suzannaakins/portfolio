@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: ;
+    background-color: d7d8e0;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -103,7 +103,7 @@ header nav ul li a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 100px;
     width: 100%;
     grid-auto-rows: minmax(150px, 1fr);
     padding-top: 50px;
@@ -111,7 +111,14 @@ header nav ul li a {
 
 .item-1, .item-4, .item-6 {
     grid-column: 1 / 2;
-    padding-left: 150px;
+    padding-left: 150px;  
+    padding-right: 10px;
+    border-right: solid 2px #141b33a6;  
+}
+
+h2 {
+    color: #141b33a6;
+    font-size: 40px;
 }
 
 .item-2 {
@@ -122,10 +129,12 @@ header nav ul li a {
     grid-column: 4 / 5;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .item-3 img {
     width: 50%;
+    position: absolute;
 }
 
 .item-5 {
@@ -140,11 +149,10 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
-    text-align: right;
     margin: 0 auto;
     padding-right: 50px;
+    padding-top: 60px;
 }
 
 .item-7 ul li {
@@ -154,6 +162,62 @@ header nav ul li a {
 
 .item-7 ul li a {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 /* MAIN PAGE Styles End */
+
+/* Work Grid Styles Start */
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+.surf {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.work-grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.LED {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.calc {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.puzzle {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.runbuddy {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
+/* Work Grid Styles End */
