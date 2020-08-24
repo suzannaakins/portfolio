@@ -10,12 +10,12 @@ I used CSS Grid for the page starting below the header and hero sections, so tha
 
 The most challenging part is getting the work section to adapt to mobile devices, and I still haven't completely fixed this issue yet.  I changed the grid layout for mobile, which helped, but the images are still squished. See?
 
-![image of un-responsive work section grid on mobile device](.assets/images/squished.png) 
+![image of un-responsive work section grid on mobile device](./assets/images/squished.png) 
 
 I tried adding max-height, flex display, etc.  Nothing worked.  If anyone has suggestions, I'm all ears!
 
 Here is a preview of my finished project: 
-![final page](.assets/images/finalpage.png)
+![final page](./assets/images/finalpage.png)
 
 And, you may view the page here: https://suzannaakins.github.io/portfolio/
 
