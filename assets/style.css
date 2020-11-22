@@ -191,16 +191,20 @@ h2 {
 
 .container {
     position: relative;
-    border: solid 5px blue;
+    border: solid 5px white;
     display: flex;
 }
 
+#bartenderphoto, #covidphoto {
+    object-fit: cover;
+    height: 100%;
+}
 .text-block {
     position: absolute;
     bottom: 30px;
     left: 0px;
     color: rgb(73, 73, 73);
-    background-color: blue;
+    background-color: rgb(73, 73, 73);
     padding: 10px 20px;
 }
 
