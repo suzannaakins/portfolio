@@ -31,11 +31,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    background-color: white;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 header h1 a {
@@ -64,7 +65,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--primary-color);
 }
 /* Hero Styles Start */
 
